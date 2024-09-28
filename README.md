@@ -1,4 +1,4 @@
-# Challenge Frequently Asked Questions by [devchallenges.io]([devchallenges.io](https://devchallenges.io))
+# Challenge Frequently Asked Questions by [devchallenges.io](https://devchallenges.io)
 Create a simple FAQ page to test HTML and CSS syntax and improve your web development skills. Get started with HTML by working with text, links, and lists.
 You are required to create a simple FAQ page to test HTML and CSS syntax with provided design.
 
