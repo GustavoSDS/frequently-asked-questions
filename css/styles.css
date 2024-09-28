@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+/* Global styles */
+:root {
+    --link-color: #4E80EE;
+    --text-color: #030616;
+    --background-header: #FFFFFF;
+    --background-body: #F8FAFC;
+    --border-color: #D2D5DA;
+    --font-family: 'Inter', sans-serif;
+    --font-size-body: 1rem;
+    --font-size-heading: 2.25rem;
+    --font-size-heading-2: 1.5rem;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-body);
+    color: var(--text-color);
+}
+
+body,
+header,
+main,
+section,
+ol,
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--background-header);
+    height: 13.9375rem;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    h1,
+    p {
+        text-align: center;
+    }
+}
+
+h1,
+h2 {
+    line-height: 44px;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-semibold);
+}
+
+main {
+    padding: 4.5rem 1.5rem;
+    min-height: calc(100vh - 13.9375rem);
+    gap: 2.4375rem;
+}
+
+section {
+    gap: 2rem;
+
+    ol,
+    ul {
+        list-style-position: inside;
+
+        li {
+            line-height: 1.1875rem;
+        }
+    }
+
+    ol {
+        gap: .75rem;
+    }
+
+    ul {
+        gap: .4375rem;
+
+        li {
+            span {
+                font-weight: var(--font-weight-semibold);
+            }
+
+            &:nth-child(2) {
+                line-height: 31px;
+            }
+        }
+    }
+
+}
+
+h2 {
+    font-size: var(--font-size-heading-2);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: 42rem;
+    }
+}
